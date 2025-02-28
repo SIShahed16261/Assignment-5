@@ -14,9 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-slate-200 min-h-screen pt-6">
+<body class="bg-slate-200 min-h-screen pt-6 pb-6">
 
-    <nav class=" flex justify-between items-center border border-white bg-white rounded-xl p-4 w-4/5 mx-auto mb-6 ">
+    <nav class=" flex justify-between items-center border border-white bg-white rounded-xl p-4 w-9/10 mx-auto mb-6 ">
         <div class=" flex items-center space-x-2">
             <img src="assets/logo.png" alt="" class="object-contain">
             <p class="text-xl">Dev<b>Board</b></p>
@@ -31,8 +31,9 @@
             </button>
         </div>
     </nav>
-
-    <section class="main-section w-4/5 mx-auto p-4 bg-white rounded-xl">
+    <section class="2section flex w-9/10 mx-auto gap-4">
+<!-- main section -->
+    <section class=" main-section w-4/5 mx-auto p-4 bg-white rounded-xl">
         <div class="flex justify-between">
             <div class="w-1/5 flex items-center space-x-4 bg-slate-200 rounded-xl p-4">
                 <img src="assets/checkbox.png" alt="" class=" bg-white p-2 rounded-full shadow-lg">
@@ -171,6 +172,15 @@ and ensure onClick works properly
             </div>
         </section>
     </section>
+    <section class=" log bg-white rounded-xl w-1/5 p-4 flex flex-col items-center text-center">
+        <div class="flex space-x-4 mb-4">
+            <img src="assets/activity.png" alt="">
+            <p class="font-medium">Activity Log</p>
+        </div>
+        <button class="btn btn-primary mb-6">Clear History</button>
+        <div class="border-t-2 border-dashed border-gray-500 w-full mx-auto p-4"></div>
+    </section>
+</section>
 </body>
 
 </html>
