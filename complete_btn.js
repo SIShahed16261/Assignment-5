@@ -20,7 +20,12 @@ function updateTask(buttonId) {
 
     const button = document.getElementById(buttonId);
     button.disabled = true;
-    alert('Congratulations! You have completed the task.');
+    alert('Board updated succesfully');
+
+    if(newTaskvalue===0){
+    alert('Congratulations!!! You have completed all the tasks.');
+        
+    }
 }
 
 
