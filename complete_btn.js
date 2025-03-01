@@ -58,15 +58,15 @@ document.getElementById("complete6").addEventListener("click", function (event) 
 
 });
 
-function logHistory(id){
+function logHistory(id) {
     const title = document.getElementById(id).innerText;
     const p = document.createElement("p");
 
     const now = new Date();
-    const hours = now.getHours().toString().padStart(2, "0"); 
+    const hours = now.getHours().toString().padStart(2, "0");
     const minutes = now.getMinutes().toString().padStart(2, "0");
     const seconds = now.getSeconds().toString().padStart(2, "0");
-    const time = `${hours}:${minutes}:${seconds}`; 
+    const time = `${hours}:${minutes}:${seconds}`;
 
 
     p.innerText = `You have completed the task ${title} at ${time}`;
@@ -74,6 +74,16 @@ function logHistory(id){
     log.appendChild(p);
 }
 
-document.getElementById("clearHistory").addEventListener("click", function () {
-    document.getElementById("log").innerHTML = " "; 
+document.getElementById("clearHistory").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("log").innerHTML = " ";
+});
+
+
+document.getElementById("colorButton").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+    document.getElementById("body").style.backgroundColor = randomColor;
 });
