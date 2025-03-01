@@ -1,4 +1,4 @@
-
+//hi i am shahed
 const now = new Date();
 const options = { weekday: "short", month: "long", day: "numeric", year: "numeric" };
 const fullDate = now.toLocaleDateString("en-US", options);
