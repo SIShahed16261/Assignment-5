@@ -66,10 +66,13 @@ function logHistory(id) {
     const hours = now.getHours().toString().padStart(2, "0");
     const minutes = now.getMinutes().toString().padStart(2, "0");
     const seconds = now.getSeconds().toString().padStart(2, "0");
-    const time = `${hours}:${minutes}:${seconds}`;
+    
+    
+
+    const time = `${hours}:${minutes}:${seconds} `;
 
 
-    p.innerText = `You have completed the task ${title} at ${time}`;
+    p.innerText = `You have completed the task ${title} at ${time} `;
     const d = document.createElement("div");
     d.classList.add( "p-2", "bg-slate-200", "rounded-xl", "mb-2");
     d.appendChild(p);
