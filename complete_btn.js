@@ -70,9 +70,13 @@ function logHistory(id) {
 
 
     p.innerText = `You have completed the task ${title} at ${time}`;
+    const d = document.createElement("div");
+    d.classList.add( "p-2", "bg-slate-200", "rounded-xl", "mb-2");
+    d.appendChild(p);
     const log = document.getElementById("log");
-    log.appendChild(p);
+    log.appendChild(d);
 }
+
 
 document.getElementById("clearHistory").addEventListener("click", function (event) {
     event.preventDefault();
