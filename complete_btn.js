@@ -67,9 +67,13 @@ function logHistory(id) {
     const minutes = now.getMinutes().toString().padStart(2, "0");
     const seconds = now.getSeconds().toString().padStart(2, "0");
     
-    
+    let date = new Date();
 
-    const time = `${hours}:${minutes}:${seconds} `;
+let time = now.toLocaleString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+      second : "2-digit"
+});
 
 
     p.innerText = `You have completed the task ${title} at ${time} `;
